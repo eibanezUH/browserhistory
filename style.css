@@ -1,0 +1,30 @@
+/* Set the font for all headings to Oswald */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Set the font for non-heading text to Open Sans */
+body, p, span, div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Set the font color to DarkBlue */
+body {
+    color: DarkBlue;
+}
+
+/* Set the top and bottom margins to 10px and left and right margins to 50px */
+body {
+    margin: 10px 50px;
+}
+
+/* Set the background color to Ivory */
+body {
+    background-color: Ivory;
+}
+
+/* Ensure logos are inline with the text */
+.logo {
+    display: inline;
+    vertical-align: middle;
+}
