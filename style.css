@@ -11,68 +11,47 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
 
-/* Navigation Bar (No Background) */
-#nav-bar {
-    display: flex;
-    justify-content: center; /* Centers the nav items */
-    list-style-type: none;
-    padding: 10px;
-    gap: 15px;
-}
+/* Removed custom navigation bar styling as Bootstrap handles it now */
+/* #nav-bar { } */
+/* #nav-bar li { } */
+/* #nav-bar a { } */
 
-#nav-bar li {
-    display: inline;
-}
-
-#nav-bar a {
-    color: DarkBlue;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-}
-
-#nav-bar a:hover {
-    text-decoration: underline;
-}
-
-/* Introduction Section - Full Width */
+/* Updated Section for Introduction */
 .introduction {
-    width: 100%;
-    display: block;
     text-align: center;
 }
 
 /* Main Container for Browser Sections */
-.main-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers items */
-    gap: 20px;
+#main-section {
+    /* Removed custom flex styles */
     margin-top: 20px;
 }
 
-/* Browser Sections as Columns */
+/* Removed custom browser section styling */
 .main-body > div {
-    flex: 0 0 300px; /* Set each section to exactly 300px */
-    box-sizing: border-box;
     padding: 10px;
 }
 
-/* Logos should be inline with text */
+/* Logos and Images */
 img {
-    display: inline;
+    display: inline-block; /* Ensure images don't break text flow */
     vertical-align: middle;
+    margin-right: 15px; /* Space between logo and text */
 }
 
-/* Responsive Adjustments */
+/* Additional Margin for Browser Sections */
+.col-lg-4, .col-md-6 {
+    padding: 15px; /* Optional padding to give some space around columns */
+}
+
+/* Responsive Adjustments - Bootstrap already handles responsiveness, but if needed */
 @media (max-width: 960px) {
-    .main-body {
-        justify-content: space-around; /* Space them out nicely */
-    }
+    /* No need for custom styles since Bootstrap grid system handles it */
 }
 
 @media (max-width: 768px) {
-    .main-body > div {
-        flex: 1 1 100%; /* Make them full width on small screens */
+    /* Ensures full width for smaller screens */
+    .col-lg-4, .col-md-6 {
+        flex: 1 1 100%;
     }
 }
