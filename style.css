@@ -11,30 +11,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
 
-/* Navigation Bar (No Background) */
-#nav-bar {
-    display: flex;
-    justify-content: center; /* Centers the nav items */
-    list-style-type: none;
-    padding: 10px;
-    gap: 15px;
-}
-
-#nav-bar li {
-    display: inline;
-}
-
-#nav-bar a {
-    color: DarkBlue;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-}
-
-#nav-bar a:hover {
-    text-decoration: underline;
-}
-
 /* Introduction Section - Full Width */
 .introduction {
     width: 100%;
